@@ -36,8 +36,7 @@ print(f'Number of features in the principal components: {data_matrix.shape[1]}')
 # Task 3: Calculate the eigenvalues from the singular values and extract the eigenvectors.
 # ---------------
 # Find the eigenvalues from the singular values
-singular_values = pca.singular_values_
-eigenvalues = singular_values ** 2
+eigenvalues = pca.explained_variance_
 
 # Eigenvectors are in the property `.components_` as row vectors. To turn them into column vectors, transpose them using the NumPy method `.T`.
 eigenvectors = pca.components_
