@@ -25,4 +25,3 @@ classifier = MultinomialNB()
 classifier.fit(train_counts, train_emails.target)
 
 print(classifier.score(test_counts, test_emails.target))
-
